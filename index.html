@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Serghei Nuta - Junior Software Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box logo">
+            <a href="index.html">SN</a>
+        </div>
+
+        <div class="box menu" onclick="openNav()">
+
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="index.html#section1" onclick="closeNav()">About</a>
+                <a href="index.html#section2" onclick="closeNav()">Works</a>
+            </div>
+        </div>
+
+        <div class="box title">
+            <div class="titleBox">
+                <div class="titleB">
+                    <span class="block"></span>
+                    <h1>SERGHEI NUTA <span></span></h1>
+                </div>
+                <div class="role">
+                    <div class="block"></div>
+                    <p>Junior Software Developer</p>
+                </div>
+            </div>
+            <p>I build things for the web.</p>
+        </div>
+
+        <div class="box sidebarA">
+            <a href="#section1">about me</a>
+            <svg viewBox="0 0 150 1000">
+                <line x1="70" y1="0" x2="70" y2="1000" stroke="black" stroke-width="6" stroke-linecap="round" />
+            </svg>
+        </div>
+
+
+        <div class="box about" id="section1">
+            <h2>Curious <br> &nbsp&nbsp &nbsp&nbsp &nbsp<span>&</span> Hungry </h2>
+            <p>always learning & living a full life.</p>
+            <h3>SKILLS</h3>
+            <div class="cols">
+            <div class="col">
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3/SCSS</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+            </ul>
+        </div>
+            <div class="col">
+            <ul>
+                <li>React JS</li>
+                <li>Bootstrap</li>
+                <li>Firebase</li>
+                <li>Unit Testing/Jest</li>
+            </ul>
+        </div>
+            <div class="col">
+            <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>yarn/npm</li>
+                <li>Agile/Scrum</li>
+            </ul>
+        </div>
+        </div>
+        </div>
+        
+
+        <div class="box sidebarB">
+            <a href="#section2">see works</a>
+            <svg viewBox="0 0 150 1000">
+                <line x1="70" y1="0" x2="70" y2="1000" stroke="black" stroke-width="6" stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <div class="box works" id="section2">
+            <h2> My works</h2>
+            <div class="portfolio">
+                <div class="image-container translucent">
+                    <img src="./images/kameha.PNG" alt="kameha game" class="work-image item-image">
+                    <div class="item-text">
+                        <div class="item-wrapper">
+                            <p class="item-text-source">
+                                <a href="https://github.com/SergiuNuta/line-maze-game" target="blank">source</a>
+                                /
+                                <a href="https://sergiunuta.github.io/line-maze-game/" target="blank">DEMO</a>
+                            </p>
+                            <h4 class="item-text-title">KAMEHA MAZE</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container translucent">
+                    <img src="./images/pokemon.jpg" alt="pokemon" class="work-image item-image">
+                    <div class="item-text">
+                        <div class="item-wrapper">
+                            <p class="item-text-source">
+                                <a href="https://github.com/SergiuNuta/react-pokemon" target="blank">source</a>
+                                /
+                                <a href="https://react-pokemon.web.app" target="blank">DEMO</a>
+                            </p>
+                            <h4 class="item-text-title">Pokedex</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container translucent">
+                    <img src="./images/rps.PNG" alt="rock-paper-scissors" class="work-image item-image">
+                    <div class="item-text">
+                        <div class="item-wrapper">
+                            <p class="item-text-source">
+                                <a href="https://github.com/SergiuNuta/rock-paper-scissors-my-repo" target="blank">source</a>
+                                /
+                                <a href="https://sergiunuta.github.io/rock-paper-scissors-my-repo/" target="blank">demo</a>
+                            </p>
+                            <h4 class="item-text-title">Rock-Paper-Scissors</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container translucent">
+                    <img src="./images/tic-tac.PNG" alt="apple website" class="work-image item-image">
+                    <div class="item-text">
+                        <div class="item-wrapper">
+                            <p class="item-text-source">
+                                <a href="https://github.com/SergiuNuta/tic-tac-toe-repo" target="blank">source</a>
+                                /
+                                <a href="https://tic-tac-toe-05.netlify.com/" target="blank">demo</a>
+                            </p>
+                            <h4 class="item-text-title">Tic-Tac-Toe</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container translucent">
+                    <img src="./images/book.PNG" alt="google-books" class="work-image item-image">
+                    <div class="item-text">
+                        <div class="item-wrapper">
+                            <p class="item-text-source">
+                                <a href="https://github.com/SergiuNuta/google-books-react" target="blank">source</a>
+                                /
+                                <a href="https://google-books-05.netlify.com" target="blank">demo</a>
+                            </p>
+                            <h4 class="item-text-title">Google books</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container translucent">
+                    <img src="./images/drop.PNG" alt="the-drop" class="work-image item-image">
+                    <div class="item-text">
+                        <div class="item-wrapper">
+                            <p class="item-text-source">
+                                <a href="https://github.com/nology-tech/the-drop-x-nology" target="blank">source</a>
+                                /
+                                <a href="https://the-drop-x-nology.web.app/" target="blank">demo</a>
+                            </p>
+                            <h4 class="item-text-title">Client project The Drop</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box social">
+            <h2>Get to know me </h2>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://github.com/SergiuNuta" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/sergiu_nuta" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/serghei-nuta-472092123/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/sergius.n/" target="_blank"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <div class="social-second">
+                <img src="IMG_20190817_215216_662.jpg" alt="" class="photo-of-me">
+                <div class="location">
+                    <div class="image-flex">
+                        <img src="place.png" alt="London" class="location-image">
+                    </div>
+                    <div class="location-size">
+                        <h2>London</h2>
+                        <a href="./download/SergheiNutaCV-with-contact.pdf" target="blank"><span id="download">download</span> CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box contact">
+            <h2>Get in touch</h2>
+            <form action="" class="fcontainer">
+                <label for="fname">NAME</label>
+                <input type="text" id="name" name="Your name" placeholder="Your name..">
+
+                <label for="lname">EMAIL</label>
+                <input type="text" id="email" name="Email adress" placeholder="Your email adress..">
+
+
+                <label for="subject">MESSAGE</label>
+                <textarea id="subject" name="message" placeholder="Start typing here" style="height:150px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <!-- </div> -->
+        <footer class="box footer">
+            <div class="ocean">
+                <div class="wave"></div>
+                <div class="wave"></div>
+              </div>
+            <div class="box footer_inner">
+                <nav>
+                    <a href="">© serghei nuta</a>
+                    <div class="footer_nav">
+                        <a href="index.html#section1">about</a>
+                        <a href="index.html#section2">works</a>
+
+                    </div>
+                </nav>
+
+            </div>
+        </footer>
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script rel="stylesheet" src="js/main.js"></script>
+</body>
+
+</html>
