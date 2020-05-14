@@ -462,7 +462,6 @@ body {
       display: inline-block;
       flex: 0 0 auto;
       overflow: hidden;
-      // background-color: #128EF3;
       background-color: #cdee4a;
       border-radius: 15px;
 
@@ -546,6 +545,11 @@ body {
       padding: 0 15px;
       margin: 15px 0 0 0;
       color: black;
+    }
+
+    .item-text-subtitle {
+      margin: 10px;
+      color: gray  ;
     }
 
     .item-text-source {
@@ -1033,8 +1037,7 @@ body {
 
       .image-container {
         margin: 10px 0;
-        width: 350px;
-        // height: 300px;
+        width: 400px;
       }
 
       .work-image {
