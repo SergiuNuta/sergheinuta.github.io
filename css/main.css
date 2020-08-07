@@ -77,10 +77,6 @@ body {
   grid-gap: 5px;
       grid-template-areas: "menu" "title" "about" "works" "social" "contact" "footer";
   /*---- social media icons */
-  /* Style inputs with type="text", select elements and textareas */
-  /* Style the submit button with a specific background color etc */
-  /* When moving the mouse over the submit button, add a darker green color */
-  /* Add a background color and some padding around the form */
 }
 
 .wrapper .sidebarA,
@@ -880,81 +876,21 @@ body {
   margin: 0 auto;
   width: 375px;
   height: 450px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #fafbfd;
-  font-size: 1.5em;
-  letter-spacing: 6px;
   -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
           box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.wrapper .contact h2 {
-  margin-top: 20px;
-}
-
-.wrapper input[type="text"],
-.wrapper select,
-.wrapper textarea {
-  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+.wrapper .contact img {
   width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
-  border: none;
-  border-radius: 4px;
-  /* Rounded borders */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  margin: 12px 0;
-  /* Add a top margin */
-  resize: none;
-}
-
-.wrapper input:focus,
-.wrapper select:focus,
-.wrapper textarea:focus,
-.wrapper button:focus {
-  outline: none;
-}
-
-.wrapper input[type="submit"] {
-  font-size: 18px;
-  background-color: #cdee4a;
-  color: black;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  letter-spacing: 5px;
-  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-}
-
-.wrapper input[type="submit"]:hover {
-  color: white;
-  background-color: #313030;
-  text-shadow: none;
-}
-
-.wrapper .fcontainer {
-  width: 90%;
-  border-radius: 5px;
-  margin: 30px 0;
-  text-align: left;
-  font-size: 15px;
-  letter-spacing: 6px;
-  text-shadow: 2px 2px 4px #e0e5ec;
+  -webkit-animation: bounce;
+          animation: bounce;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .wrapper .footer {
@@ -966,7 +902,6 @@ body {
   background-color: #999;
   font-size: 25px;
   padding: 30px 0;
-  position: relative;
 }
 
 .wrapper .footer a:link,
@@ -980,50 +915,41 @@ body {
   visibility: hidden;
 }
 
-.wrapper .footer .ocean {
-  z-index: -1;
-  height: 0.5%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #015871;
-}
-
-.wrapper .footer .wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
-  position: absolute;
-  top: -300px;
-  width: 6400px;
-  height: 198px;
-  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
-.wrapper .footer .wave:nth-of-type(2) {
-  top: -170px;
-  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
-}
-
-@-webkit-keyframes wave {
+@-webkit-keyframes bounce {
   0% {
-    margin-left: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  30% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  50% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
   }
   100% {
-    margin-left: -1600px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-@keyframes wave {
+@keyframes bounce {
   0% {
-    margin-left: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  30% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  50% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
   }
   100% {
-    margin-left: -1600px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -1036,10 +962,6 @@ body {
         grid-template-columns: 3% 2fr 2fr 3%;
         grid-template-areas: ". logo . menu" "sidebarA title title ." "sidebarB  about about ." ". works works ." ". social contact ." "footer footer footer footer";
     /*---- social media icons */
-    /* Style inputs with type="text", select elements and textareas */
-    /* Style the submit button with a specific background color etc */
-    /* When moving the mouse over the submit button, add a darker green color */
-    /* Add a background color and some padding around the form */
     /*--------------navigation -------------------------------------*/
   }
   .wrapper .logo a {
@@ -1339,74 +1261,12 @@ body {
             box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
   }
   .wrapper .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     background-color: #fafbfd;
-    font-size: 2vw;
-    letter-spacing: 6px;
     -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
             box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-  }
-  .wrapper .contact h2 {
-    margin-top: 20px;
-  }
-  .wrapper input[type="text"],
-  .wrapper select,
-  .wrapper textarea {
-    -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-    width: 100%;
-    /* Full width */
-    padding: 12px;
-    /* Some padding */
-    border: none;
-    border-radius: 4px;
-    /* Rounded borders */
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    /* Make sure that padding and width stays in place */
-    margin: 12px 0;
-    /* Add a top margin */
-    resize: none;
-  }
-  .wrapper input:focus,
-  .wrapper select:focus,
-  .wrapper textarea:focus,
-  .wrapper button:focus {
-    outline: none;
-  }
-  .wrapper input[type="submit"] {
-    font-size: 18px;
-    background-color: #cdee4a;
-    color: black;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    letter-spacing: 5px;
-    -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-  }
-  .wrapper input[type="submit"]:hover {
-    color: white;
-    background-color: #313030;
-    text-shadow: none;
-  }
-  .wrapper .fcontainer {
-    border-radius: 5px;
-    margin: 30px 0;
-    text-align: left;
-    font-size: 15px;
-    letter-spacing: 6px;
-    text-shadow: 2px 2px 4px #e0e5ec;
   }
   .wrapper .menu {
     padding: 10px;
